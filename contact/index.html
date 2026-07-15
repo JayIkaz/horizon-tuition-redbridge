@@ -66,34 +66,40 @@
       <div>
         <div id="contact-form-wrap">
           <h3 style="color:var(--navy);margin-bottom:1.25rem">Send Us a Message</h3>
+          <form id="enquiry-form" action="https://formsubmit.co/info@horizontuitionredbridge.co.uk" method="POST" onsubmit="return validateEnquiryForm()">
+          <input type="hidden" name="_subject" value="New enquiry from horizontuitionredbridge.co.uk"/>
+          <input type="hidden" name="_template" value="table"/>
+          <input type="hidden" name="_next" value="https://horizontuitionredbridge.co.uk/contact/?sent=1"/>
+          <input type="hidden" name="_captcha" value="false"/>
           <div class="form-row">
-            <div class="form-group"><label>Parent Name *</label><input type="text" placeholder="Your full name" id="f-name"/></div>
-            <div class="form-group"><label>Email Address *</label><input type="email" placeholder="your@email.com" id="f-email"/></div>
+            <div class="form-group"><label>Parent Name *</label><input type="text" name="Parent Name" placeholder="Your full name" id="f-name"/></div>
+            <div class="form-group"><label>Email Address *</label><input type="email" name="Email" placeholder="your@email.com" id="f-email"/></div>
           </div>
           <div class="form-row">
-            <div class="form-group"><label>Phone Number *</label><input type="tel" placeholder="07xxx xxxxxx" id="f-phone"/></div>
-            <div class="form-group"><label>Child's First Name *</label><input type="text" placeholder="Child's name" id="f-child"/></div>
+            <div class="form-group"><label>Phone Number *</label><input type="tel" name="Phone" placeholder="07xxx xxxxxx" id="f-phone"/></div>
+            <div class="form-group"><label>Child's First Name *</label><input type="text" name="Child's Name" placeholder="Child's name" id="f-child"/></div>
           </div>
           <div class="form-row">
-            <div class="form-group"><label>Year Group *</label><select id="f-year"><option value="">Select year group...</option><option>Year 1</option><option>Year 2</option><option>Year 3</option><option>Year 4</option><option>Year 5</option><option>Year 6</option><option>Year 7</option><option>Year 8</option><option>Year 9</option><option>Year 10</option><option>Year 11</option></select></div>
-            <div class="form-group"><label>How did you hear about us?</label><select id="f-source"><option value="">Select...</option><option>Google search</option><option>Word of mouth</option><option>Social media</option><option>Nextdoor</option><option>Local flyer</option><option>Other</option></select></div>
+            <div class="form-group"><label>Year Group *</label><select name="Year Group" id="f-year"><option value="">Select year group...</option><option>Year 1</option><option>Year 2</option><option>Year 3</option><option>Year 4</option><option>Year 5</option><option>Year 6</option><option>Year 7</option><option>Year 8</option><option>Year 9</option><option>Year 10</option><option>Year 11</option></select></div>
+            <div class="form-group"><label>How did you hear about us?</label><select name="How they heard about us" id="f-source"><option value="">Select...</option><option>Google search</option><option>Word of mouth</option><option>Social media</option><option>Nextdoor</option><option>Local flyer</option><option>Other</option></select></div>
           </div>
           <div class="form-group"><label>Subject(s) of Interest</label>
             <div class="subject-checkboxes" id="f-subject-group">
-              <label><input type="checkbox" value="Maths Tuition"/> Maths Tuition</label>
-              <label><input type="checkbox" value="English Tuition"/> English Tuition</label>
-              <label><input type="checkbox" value="Science"/> Science</label>
-              <label><input type="checkbox" value="11+ Preparation"/> 11+ Preparation</label>
-              <label><input type="checkbox" value="SATs Preparation"/> SATs Preparation</label>
-              <label><input type="checkbox" value="GCSE Support"/> GCSE Support</label>
-              <label><input type="checkbox" value="SEN &amp; Dyslexia Support"/> SEN &amp; Dyslexia Support</label>
-              <label><input type="checkbox" value="Not sure / general enquiry"/> Not sure / general enquiry</label>
+              <label><input type="checkbox" name="Subjects of interest" value="Maths Tuition"/> Maths Tuition</label>
+              <label><input type="checkbox" name="Subjects of interest" value="English Tuition"/> English Tuition</label>
+              <label><input type="checkbox" name="Subjects of interest" value="Science"/> Science</label>
+              <label><input type="checkbox" name="Subjects of interest" value="11+ Preparation"/> 11+ Preparation</label>
+              <label><input type="checkbox" name="Subjects of interest" value="SATs Preparation"/> SATs Preparation</label>
+              <label><input type="checkbox" name="Subjects of interest" value="GCSE Support"/> GCSE Support</label>
+              <label><input type="checkbox" name="Subjects of interest" value="SEN &amp; Dyslexia Support"/> SEN &amp; Dyslexia Support</label>
+              <label><input type="checkbox" name="Subjects of interest" value="Not sure / general enquiry"/> Not sure / general enquiry</label>
             </div>
           </div>
-          <div class="form-group"><label>Message (optional)</label><textarea id="f-message" placeholder="Tell us a little about your child's needs — any context is helpful"></textarea></div>
-          <input type="text" id="f-honey" name="_honey" style="position:absolute;left:-9999px" tabindex="-1" autocomplete="off"/>
+          <div class="form-group"><label>Message (optional)</label><textarea name="Message" id="f-message" placeholder="Tell us a little about your child's needs — any context is helpful"></textarea></div>
+          <input type="text" name="_honey" style="position:absolute;left:-9999px" tabindex="-1" autocomplete="off"/>
           <div class="consent-row"><input type="checkbox" id="f-consent"/><label for="f-consent">I consent to Horizon Tuition Redbridge storing my details for the purpose of this enquiry. See our <a href="/privacy-policy/" style="color:var(--teal);cursor:pointer">Privacy Policy</a>. *</label></div>
-          <button class="btn-submit" onclick="submitForm()">Send Enquiry →</button>
+          <button type="submit" class="btn-submit">Send Enquiry →</button>
+          </form>
           <div class="form-note">We aim to respond within 24 hours · info@horizontuitionredbridge.co.uk</div>
         </div>
         <div class="success-msg" id="success-msg"><div style="font-size:2rem;margin-bottom:0.5rem">✅</div><h3>Thank you — we've received your enquiry!</h3><p>We'll be in touch within 24 hours.</p></div>

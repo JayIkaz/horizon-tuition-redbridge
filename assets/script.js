@@ -55,45 +55,20 @@ function filterResources(cat,btn){
     card.style.display=(cat==='all'||card.dataset.cat.includes(cat))?'block':'none';
   });
 }
-function submitForm(){
+function validateEnquiryForm(){
   var name=document.getElementById('f-name').value.trim();
   var email=document.getElementById('f-email').value.trim();
-  var phone=document.getElementById('f-phone').value.trim();
-  var child=document.getElementById('f-child').value.trim();
-  var year=document.getElementById('f-year').value;
-  var source=document.getElementById('f-source').value;
-  var message=document.getElementById('f-message').value.trim();
   var consent=document.getElementById('f-consent').checked;
-  var honey=document.getElementById('f-honey').value;
-  var subjects=Array.prototype.slice.call(document.querySelectorAll('#f-subject-group input:checked')).map(function(cb){return cb.value;});
-  if(!name||!email){showNotif('Please fill in your name and email address.');return;}
-  if(!consent){showNotif('Please tick the consent checkbox to proceed.');return;}
-  if(honey){return;}
+  if(!name||!email){showNotif('Please fill in your name and email address.');return false;}
+  if(!consent){showNotif('Please tick the consent checkbox to proceed.');return false;}
   var btn=document.querySelector('.btn-submit');
-  var originalText=btn.textContent;
-  btn.disabled=true;btn.textContent='Sending…';
-  fetch('https://formsubmit.co/ajax/info@horizontuitionredbridge.co.uk',{
-    method:'POST',
-    headers:{'Content-Type':'application/json','Accept':'application/json'},
-    body:JSON.stringify({
-      _subject:'New enquiry from horizontuitionredbridge.co.uk',
-      'Parent Name':name,
-      'Email':email,
-      'Phone':phone,
-      'Child\'s Name':child,
-      'Year Group':year||'(not specified)',
-      'How they heard about us':source||'(not specified)',
-      'Subjects of interest':subjects.length?subjects.join(', '):'(not specified)',
-      'Message':message||'(none)'
-    })
-  }).then(function(r){return r.json();}).then(function(){
-    document.getElementById('contact-form-wrap').style.display='none';
-    document.getElementById('success-msg').style.display='block';
-    showNotif('Enquiry sent! We\'ll be in touch within 24 hours. ✓');
-  }).catch(function(){
-    btn.disabled=false;btn.textContent=originalText;
-    showNotif('Something went wrong sending your enquiry — please call us on 02080586815.');
-  });
+  if(btn){btn.disabled=true;btn.textContent='Sending…';}
+  return true;
+}
+if(location.search.indexOf('sent=1')!==-1){
+  var wrap=document.getElementById('contact-form-wrap');
+  var msg=document.getElementById('success-msg');
+  if(wrap && msg){wrap.style.display='none';msg.style.display='block';}
 }
 function showNotif(msg){
   var n=document.getElementById('notif');
