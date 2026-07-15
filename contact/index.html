@@ -66,11 +66,11 @@
       <div>
         <div id="contact-form-wrap">
           <h3 style="color:var(--navy);margin-bottom:1.25rem">Send Us a Message</h3>
-          <form id="enquiry-form" action="https://formsubmit.co/info@horizontuitionredbridge.co.uk" method="POST" onsubmit="return validateEnquiryForm()">
-          <input type="hidden" name="_subject" value="New enquiry from horizontuitionredbridge.co.uk"/>
-          <input type="hidden" name="_template" value="table"/>
-          <input type="hidden" name="_next" value="https://horizontuitionredbridge.co.uk/contact/?sent=1"/>
-          <input type="hidden" name="_captcha" value="false"/>
+          <form id="enquiry-form" action="https://api.web3forms.com/submit" method="POST" onsubmit="return validateEnquiryForm()">
+          <input type="hidden" name="access_key" value="3ee4b9b0-55fe-4835-9071-4f45f175d531"/>
+          <input type="hidden" name="subject" value="New enquiry from horizontuitionredbridge.co.uk"/>
+          <input type="hidden" name="from_name" value="Horizon Tuition Website"/>
+          <input type="hidden" name="redirect" value="https://horizontuitionredbridge.co.uk/contact/?sent=1"/>
           <div class="form-row">
             <div class="form-group"><label>Parent Name *</label><input type="text" name="Parent Name" placeholder="Your full name" id="f-name"/></div>
             <div class="form-group"><label>Email Address *</label><input type="email" name="Email" placeholder="your@email.com" id="f-email"/></div>
@@ -96,7 +96,7 @@
             </div>
           </div>
           <div class="form-group"><label>Message (optional)</label><textarea name="Message" id="f-message" placeholder="Tell us a little about your child's needs — any context is helpful"></textarea></div>
-          <input type="text" name="_honey" style="position:absolute;left:-9999px" tabindex="-1" autocomplete="off"/>
+          <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off"/>
           <div class="consent-row"><input type="checkbox" id="f-consent"/><label for="f-consent">I consent to Horizon Tuition Redbridge storing my details for the purpose of this enquiry. See our <a href="/privacy-policy/" style="color:var(--teal);cursor:pointer">Privacy Policy</a>. *</label></div>
           <button type="submit" class="btn-submit">Send Enquiry →</button>
           </form>
