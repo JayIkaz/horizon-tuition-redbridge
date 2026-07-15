@@ -78,8 +78,20 @@
             <div class="form-group"><label>Year Group *</label><select id="f-year"><option value="">Select year group...</option><option>Year 1</option><option>Year 2</option><option>Year 3</option><option>Year 4</option><option>Year 5</option><option>Year 6</option><option>Year 7</option><option>Year 8</option><option>Year 9</option><option>Year 10</option><option>Year 11</option></select></div>
             <div class="form-group"><label>How did you hear about us?</label><select id="f-source"><option value="">Select...</option><option>Google search</option><option>Word of mouth</option><option>Social media</option><option>Nextdoor</option><option>Local flyer</option><option>Other</option></select></div>
           </div>
-          <div class="form-group"><label>Subject(s) of Interest</label><select id="f-subject"><option value="">Select programme...</option><option>Maths Tuition</option><option>English Tuition</option><option>11+ Preparation</option><option>SATs Preparation</option><option>GCSE Support</option><option>SEN &amp; Dyslexia Support</option><option>Multiple / Unsure</option></select></div>
-          <div class="form-group"><label>Message (optional)</label><textarea placeholder="Tell us a little about your child's needs — any context is helpful"></textarea></div>
+          <div class="form-group"><label>Subject(s) of Interest</label>
+            <div class="subject-checkboxes" id="f-subject-group">
+              <label><input type="checkbox" value="Maths Tuition"/> Maths Tuition</label>
+              <label><input type="checkbox" value="English Tuition"/> English Tuition</label>
+              <label><input type="checkbox" value="Science"/> Science</label>
+              <label><input type="checkbox" value="11+ Preparation"/> 11+ Preparation</label>
+              <label><input type="checkbox" value="SATs Preparation"/> SATs Preparation</label>
+              <label><input type="checkbox" value="GCSE Support"/> GCSE Support</label>
+              <label><input type="checkbox" value="SEN &amp; Dyslexia Support"/> SEN &amp; Dyslexia Support</label>
+              <label><input type="checkbox" value="Not sure / general enquiry"/> Not sure / general enquiry</label>
+            </div>
+          </div>
+          <div class="form-group"><label>Message (optional)</label><textarea id="f-message" placeholder="Tell us a little about your child's needs — any context is helpful"></textarea></div>
+          <input type="text" id="f-honey" name="_honey" style="position:absolute;left:-9999px" tabindex="-1" autocomplete="off"/>
           <div class="consent-row"><input type="checkbox" id="f-consent"/><label for="f-consent">I consent to Horizon Tuition Redbridge storing my details for the purpose of this enquiry. See our <a href="/privacy-policy/" style="color:var(--teal);cursor:pointer">Privacy Policy</a>. *</label></div>
           <button class="btn-submit" onclick="submitForm()">Send Enquiry →</button>
           <div class="form-note">We aim to respond within 24 hours · info@horizontuitionredbridge.co.uk</div>
@@ -111,7 +123,7 @@
         </div>
       </div>
       <div class="footer-col"><h4>Programmes</h4><a href="/maths-tuition/">Maths Tuition</a><a href="/english-tuition/">English Tuition</a><a href="/11-plus-preparation/">11+ Preparation</a><a href="/sats-preparation/">SATs Preparation</a><a href="/gcse-support/">GCSE Support</a><a href="/sen-dyslexia-support/">SEN &amp; Dyslexia</a></div>
-      <div class="footer-col"><h4>Information</h4><a href="/about-us/">About Us</a><a href="/how-it-works/">How It Works</a><a href="/testimonials/">Results</a><a href="/resources/">Resources</a><a href="/safeguarding/">Safeguarding</a><a href="/email-sequences/">Email Sequences</a></div>
+      <div class="footer-col"><h4>Information</h4><a href="/about-us/">About Us</a><a href="/how-it-works/">How It Works</a><a href="/testimonials/">Results</a><a href="/resources/">Resources</a><a href="/safeguarding/">Safeguarding</a></div>
       <div class="footer-col"><h4>Legal</h4><a href="/privacy-policy/">Privacy Policy</a><a href="/safeguarding/">Safeguarding</a><h4 style="margin-top:1rem">Opening Hours</h4><span style="font-size:0.8rem;color:rgba(255,255,255,0.5)">Open 7 days · Mon–Fri: 4pm–6:30pm</span><span style="font-size:0.8rem;color:rgba(255,255,255,0.5)">Saturday: 10am–3:45pm</span><span style="font-size:0.8rem;color:rgba(255,255,255,0.5)">Sunday: 10am–12pm</span></div>
     </div>
     <div class="footer-bottom"><span>© 2026 Horizon Tuition Redbridge. All rights reserved.</span><div style="display:flex;gap:1rem"><a href="/privacy-policy/">Privacy</a><a href="/safeguarding/">Safeguarding</a></div></div>
