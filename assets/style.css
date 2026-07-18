@@ -262,6 +262,8 @@ footer{background:var(--grey-800);color:rgba(255,255,255,0.7);padding:3rem 2rem 
   .quals-grid{grid-template-columns:1fr}
   .ks-photo-grid{grid-template-columns:1fr}
   .prog-2col-grid{grid-template-columns:1fr;gap:1.5rem !important}
+  .trust-bar-inner{flex-direction:column;align-items:flex-start;justify-content:flex-start;gap:0.9rem}
+  .trust-item{width:100%}
 }
 @media(max-width:480px){
   .footer-grid{grid-template-columns:1fr}
