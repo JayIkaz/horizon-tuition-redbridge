@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>How to Prepare for the 11+ in Redbridge | Horizon Tuition Redbridge</title>
+<title>11+ Preparation | Horizon Tuition Redbridge</title>
 <meta name="description" content="Professional English, Maths and Exam Preparation Tuition for Ages 6–16. Delivered by Qualified, DBS-Checked Teachers in Barkingside, Redbridge."/>
 <link rel="icon" href="/favicon.ico" sizes="any"/>
 <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png"/>
@@ -11,7 +11,7 @@
 <link rel="icon" type="image/png" sizes="192x192" href="/assets/images/favicon-192x192.png"/>
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png"/>
 <link rel="icon" type="image/png" sizes="512x512" href="/assets/images/favicon-512x512.png"/>
-<link rel="canonical" href="https://www.horizontuitionredbridge.co.uk/resources/11-plus-guide/"/>
+<link rel="canonical" href="https://www.horizontuitionredbridge.co.uk/11-plus-preparation/"/>
 
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
@@ -65,25 +65,36 @@
 
 <div class="offer-bar">🎉 Opening Offer — First 4 Sessions for Just £20 <span>New students only · Limited availability</span></div>
 
-<!-- PAGE CONTENT: article-eleven-plus-guide -->
-<div class="article-page">
-    <div class="blog-cat">11+ Preparation</div>
-    <h1>How to Prepare for the 11+ in Redbridge</h1>
-    <div class="article-meta"><span>📅 June 2026</span><span>⏱ 8 min read</span><span style="color:var(--teal);font-weight:600">Horizon Tuition</span></div>
-    <div class="article-body">
-      <p>The 11+ examination is one of the most significant academic milestones in your child's education. In Redbridge and the surrounding area, selective grammar schools remain highly sought-after — and competition for places is fierce.</p>
-      <h2>Which Schools Are We Talking About?</h2>
-      <p>From Redbridge, children commonly apply to Ilford County High School for Boys, Woodford County High School for Girls, Valentines High School (partially selective), and independent selective schools such as Bancroft's.</p>
-      <h2>GL Assessment vs CEM: What's the Difference?</h2>
-      <p>GL Assessment papers are more structured and predictable, testing Verbal Reasoning, Non-Verbal Reasoning, Mathematics and English in separate papers. CEM papers are designed to be harder to prepare for, testing similar skills in less predictable formats.</p>
-      <h2>When Should You Start?</h2>
-      <p>The ideal starting point is Year 4 — giving your child a relaxed, two-year preparation. Starting in Year 5 is still very effective. Even starting at the beginning of Year 6 is not too late for an intensive programme.</p>
-      <h2>What Does Preparation Involve?</h2>
-      <ul><li>Verbal Reasoning: word patterns, letter codes, analogies, vocabulary</li><li>Non-Verbal Reasoning: spatial patterns, matrices, sequences</li><li>Mathematics: speed and accuracy on arithmetic plus problem-solving</li><li>English: comprehension, vocabulary, grammar and creative writing</li><li>Timed practice: the 11+ is as much about speed as accuracy</li></ul>
-      <div class="article-cta"><h3 style="color:#fff">Ready to Start Your Child's 11+ Journey?</h3><p>Book a free assessment and let us build a preparation plan tailored to your child.</p><button class="btn-primary" onclick="location.href='/contact/'">Book Free Assessment →</button></div>
+<!-- PAGE CONTENT: eleven-plus -->
+<div class="prog-hero" style="background:linear-gradient(135deg,#2d1a6a,#5a3ab0)"><div class="prog-hero-inner"><div class="section-tag" style="background:rgba(255,255,255,0.15);color:#fff">11+ Preparation</div><h1>Grammar School Success Starts Here</h1><p>Comprehensive 11+ preparation for GL Assessment and CEM exams.</p></div></div>
+  <section><div class="section-inner">
+    <div class="prog-2col-grid" style="gap:3rem;margin-bottom:3rem">
+      <div><h2 class="section-h">What the 11+ Tests</h2>
+        <div style="display:flex;flex-direction:column;gap:1rem;margin-top:1rem">
+          <div style="padding:1.25rem;background:var(--grey-50);border-radius:var(--radius);border-left:4px solid var(--teal)"><h4 style="color:var(--navy);margin-bottom:0.25rem">GL Assessment</h4><p style="font-size:0.875rem;color:var(--grey-600)">Tests: Verbal Reasoning, Non-Verbal Reasoning, Mathematics, English.</p></div>
+          <div style="padding:1.25rem;background:var(--grey-50);border-radius:var(--radius);border-left:4px solid var(--amber)"><h4 style="color:var(--navy);margin-bottom:0.25rem">CEM (Durham University)</h4><p style="font-size:0.875rem;color:var(--grey-600)">Tests: Verbal, Numerical Reasoning, and Spatial Reasoning. Less predictable format.</p></div>
+        </div>
+      </div>
+      <div><h2 class="section-h">Timeline for Success</h2>
+        <div style="display:flex;flex-direction:column;gap:0.75rem;margin-top:1rem">
+          <div style="padding:0.875rem;background:#fff;border:1px solid var(--grey-200);border-radius:var(--radius-sm);font-size:0.875rem"><strong style="color:var(--navy)">Year 4 (ideal start)</strong><br/><span style="color:var(--grey-600)">Foundation skills, introduce VR and NVR concepts</span></div>
+          <div style="padding:0.875rem;background:#fff;border:1px solid var(--grey-200);border-radius:var(--radius-sm);font-size:0.875rem"><strong style="color:var(--navy)">Year 5</strong><br/><span style="color:var(--grey-600)">Intensive preparation, mock papers, timed practice</span></div>
+          <div style="padding:0.875rem;background:var(--amber-light);border:1px solid var(--amber);border-radius:var(--radius-sm);font-size:0.875rem"><strong style="color:var(--navy)">Year 6 (exam year)</strong><br/><span style="color:var(--grey-600)">Final preparation, full mock exams, exam technique</span></div>
+        </div>
+      </div>
     </div>
-    <div style="margin-top:2rem"><a href="/resources/" style="color:var(--teal);font-weight:600;cursor:pointer">← Back to Resources</a></div>
-  </div>
+    <h2 style="color:var(--navy);margin-bottom:1rem">What We Cover</h2>
+    <div class="topics-list"><div class="topic-item">Verbal Reasoning (GL &amp; CEM)</div><div class="topic-item">Non-Verbal Reasoning</div><div class="topic-item">Spatial Reasoning</div><div class="topic-item">11+ Maths</div><div class="topic-item">English comprehension</div><div class="topic-item">Vocabulary building</div><div class="topic-item">Full mock exam papers</div><div class="topic-item">Exam technique &amp; timing</div><div class="topic-item">Confidence building</div><div class="topic-item">Parent strategy sessions</div></div>
+    <div style="margin-top:2rem;padding:1.5rem;background:var(--grey-50);border-radius:var(--radius)">
+      <h3 style="color:var(--navy);margin-bottom:1rem">Frequently Asked Questions</h3>
+      <div class="faq-list">
+        <div class="faq-item"><div class="faq-q" onclick="toggleFAQ(this)">When should we start 11+ preparation? <span class="faq-arrow">▾</span></div><div class="faq-a">Ideally Year 4 for a relaxed approach, or the start of Year 5 for a structured programme. Year 6 is not too late — we run intensive preparation for late starters.</div></div>
+        <div class="faq-item"><div class="faq-q" onclick="toggleFAQ(this)">Which grammar schools can you prepare for? <span class="faq-arrow">▾</span></div><div class="faq-a">We prepare for all selective schools accessible from Redbridge, including Ilford County High, Woodford County High, Bancroft's School, and others.</div></div>
+        <div class="faq-item"><div class="faq-q" onclick="toggleFAQ(this)">Do you offer mock exams? <span class="faq-arrow">▾</span></div><div class="faq-a">Yes. Mock exams under timed conditions are a core part of our 11+ programme. We review results with parents and use them to target remaining gaps.</div></div>
+      </div>
+    </div>
+    <div style="margin-top:2rem;text-align:center"><button class="btn-primary" onclick="location.href='/contact/'" style="background:var(--navy);color:#fff">Book 11+ Assessment →</button></div>
+  </div></section>
 
 <!-- FOOTER -->
 <footer>
