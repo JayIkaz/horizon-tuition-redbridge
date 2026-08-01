@@ -267,7 +267,7 @@ footer{background:var(--grey-800);color:rgba(255,255,255,0.7);padding:3rem 2rem 
   .promo-card-body{padding:1.25rem 1.5rem 1.5rem}
   .promo-card-top h3{font-size:1.3rem}
 }
-.ks-photo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.ks-photo-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.5rem}
 .prog-2col-grid{display:grid;grid-template-columns:1fr 1fr}
 @media(max-width:768px){
   .hero-inner,.about-hero-inner,.contact-grid{grid-template-columns:1fr;gap:2rem}
