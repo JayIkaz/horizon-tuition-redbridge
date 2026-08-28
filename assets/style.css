@@ -236,6 +236,7 @@ footer{background:var(--grey-800);color:rgba(255,255,255,0.7);padding:3rem 2rem 
 .footer-col h4{font-size:0.85rem;font-weight:700;color:#fff;text-transform:uppercase;letter-spacing:0.8px;margin-bottom:1rem}
 .footer-col a{display:block;font-size:0.85rem;padding:0.2rem 0;color:rgba(255,255,255,0.6);transition:color 0.2s;cursor:pointer}
 .footer-col a:hover{color:#fff}
+.footer-col span{display:block;margin-top:3px;line-height:1.5}
 .footer-bottom{border-top:1px solid rgba(255,255,255,0.1);padding-top:1.5rem;display:flex;justify-content:space-between;align-items:center;font-size:0.8rem;flex-wrap:wrap;gap:0.5rem}
 .footer-contact{display:flex;flex-direction:column;gap:0.5rem;font-size:0.85rem}
 .footer-contact a{color:rgba(255,255,255,0.6)}
