@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Student Registration Form | Horizon Tuition Redbridge</title>
+<meta name="description" content="Register your child with Horizon Tuition Redbridge. Complete our online registration form — student details, parent/guardian information, emergency contacts and medical needs."/>
+<link rel="icon" href="/favicon.ico" sizes="any"/>
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png"/>
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png"/>
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/images/favicon-192x192.png"/>
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png"/>
+<link rel="icon" type="image/png" sizes="512x512" href="/assets/images/favicon-512x512.png"/>
+<link rel="canonical" href="https://www.horizontuitionredbridge.co.uk/registration/"/>
+
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="/assets/style.css"/>
+<style>
+/* Registration-page-only styles — scoped here, not added to the shared stylesheet */
+.reg-hero{background:linear-gradient(135deg,var(--navy) 0%,var(--blue) 100%);padding:3rem 2rem}
+.reg-hero-inner{max-width:780px;margin:0 auto}
+.reg-hero h1{font-family:var(--ff-head);font-size:clamp(1.7rem,4vw,2.35rem);color:#fff;margin-bottom:0.6rem}
+.reg-hero p{color:rgba(255,255,255,0.82);font-size:1rem;line-height:1.7}
+.reg-main{max-width:780px;margin:0 auto;padding:3rem 2rem 4rem}
+.reg-progress{display:flex;gap:0.4rem;margin-bottom:2.5rem}
+.reg-progress span{flex:1;height:4px;background:var(--grey-200);border-radius:4px}
+.reg-section{margin-bottom:2.5rem}
+.reg-section-head{display:flex;align-items:center;gap:0.75rem;margin-bottom:1.25rem;padding-bottom:0.75rem;border-bottom:2px solid var(--grey-200)}
+.reg-section-num{width:32px;height:32px;background:var(--navy);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--ff-head);font-weight:700;font-size:0.95rem;flex-shrink:0}
+.reg-section-head h2{font-size:1.15rem;color:var(--navy);font-family:var(--ff-head)}
+.reg-section-note{font-size:0.82rem;color:var(--grey-400);margin:-0.75rem 0 1.25rem}
+.reg-row3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1rem}
+.reg-subhead{font-size:0.85rem;font-weight:600;color:var(--navy);margin-bottom:0.75rem}
+.reg-terms{background:var(--grey-50);border:1px solid var(--grey-200);border-radius:var(--radius);padding:1.5rem;margin-bottom:1.25rem;max-height:260px;overflow-y:auto}
+.reg-terms ol{padding-left:1.25rem;display:flex;flex-direction:column;gap:0.6rem}
+.reg-terms li{font-size:0.85rem;color:var(--grey-600);line-height:1.6}
+.reg-sig-note{font-size:0.78rem;color:var(--grey-400);margin-top:0.375rem;font-style:italic}
+.reg-opt{font-weight:400;color:var(--grey-400)}
+@media(max-width:640px){.reg-row3{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<div class="notif" id="notif"></div>
+
+<!-- PHONE BAR -->
+<div class="phone-bar">
+  <span>📞 <a href="tel:02080586815">02080586815</a></span>
+  <span style="opacity:0.4">|</span>
+  <span>📱 <a href="tel:07735106791">07735 106791</a></span>
+  <span style="opacity:0.4">|</span>
+  <span>✉ <a href="mailto:info@horizontuitionredbridge.co.uk">info@horizontuitionredbridge.co.uk</a></span>
+  <span style="opacity:0.4">|</span>
+  <span>📍 <a href="https://maps.google.com/maps?q=5+State+Parade,+Barkingside,+IG6+2EY" target="_blank" style="color:inherit">5 State Parade, Barkingside IG6 2EY</a></span>
+</div>
+
+<nav>
+  <div class="nav-inner">
+    <div class="logo" onclick="location.href='/'">
+      <img src="/assets/images/photo1.png" alt="Horizon Tuition Redbridge" style="height:38px;width:auto;display:block"/>
+      <div class="logo-sub">Give your child the best start!</div>
+    </div>
+    <button class="nav-toggle" id="navToggle" onclick="toggleMobileNav()" aria-label="Menu"><span></span><span></span><span></span></button>
+    <div class="nav-links" id="navLinks">
+      <a href="/">Home</a>
+      <a href="/about-us/">About</a>
+      <div class="nav-dropdown" id="navDropdown">
+        <a class="has-arrow" onclick="toggleNavDropdown(event)">Programmes</a>
+        <div class="nav-dropdown-menu">
+          <a href="/maths-tuition/">📐 Maths Tuition</a>
+          <a href="/english-tuition/">📖 English Tuition</a>
+          <a href="/science-tuition/">🔬 Science</a>
+          <a href="/11-plus-preparation/">🏫 11+ Preparation</a>
+          <a href="/sats-preparation/">📝 SATs Preparation</a>
+          <a href="/gcse-support/">🎓 GCSE Support</a>
+          <a href="/sen-dyslexia-support/">💙 SEN &amp; Dyslexia</a>
+        </div>
+      </div>
+      <a href="/how-it-works/">How It Works</a>
+      <a href="/testimonials/">Results</a>
+      <a href="/resources/">Resources</a>
+      <a href="/registration/">Register</a>
+      <a href="/contact/" class="nav-cta">Book Assessment</a>
+    </div>
+  </div>
+</nav>
+
+<div class="reg-hero">
+  <div class="reg-hero-inner">
+    <h1>Student registration form</h1>
+    <p>Already had your free assessment, or ready to enrol? Complete your child's registration below — it takes about five minutes and comes straight to our team, so there's nothing to print or bring in on the day.</p>
+  </div>
+</div>
+
+<main class="reg-main">
+
+  <div id="reg-form-wrap">
+    <form id="registration-form" action="https://api.web3forms.com/submit" method="POST" onsubmit="return validateRegistrationForm()">
+      <input type="hidden" name="access_key" value="e1df05e5-3b1d-4b25-8a6e-cd1caf3eb1cd"/>
+      <input type="hidden" name="subject" value="New student registration — horizontuitionredbridge.co.uk"/>
+      <input type="hidden" name="from_name" value="Horizon Tuition Registration Form"/>
+      <input type="hidden" name="redirect" value="https://horizontuitionredbridge.co.uk/registration/?sent=1"/>
+      <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off"/>
+
+      <div class="reg-progress"><span></span><span></span><span></span><span></span><span></span></div>
+
+      <!-- STUDENT -->
+      <div class="reg-section">
+        <div class="reg-section-head"><div class="reg-section-num">1</div><h2>Student information</h2></div>
+        <div class="form-row">
+          <div class="form-group"><label>First name *</label><input type="text" name="Student First Name" id="r-first" required/></div>
+          <div class="form-group"><label>Last name *</label><input type="text" name="Student Last Name" id="r-last" required/></div>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label>Date of birth *</label><input type="date" name="Date of Birth" id="r-dob" required/></div>
+          <div class="form-group"><label>Gender</label>
+            <select name="Gender">
+              <option value="">Select…</option>
+              <option>Female</option>
+              <option>Male</option>
+              <option>Prefer not to say</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label>School name *</label><input type="text" name="School Name" required/></div>
+          <div class="form-group"><label>Current year *</label><input type="text" name="Current Year" placeholder="e.g. Year 6" required/></div>
+        </div>
+        <div class="form-group"><label>Home address *</label><input type="text" name="Address" placeholder="Address line 1" required/></div>
+        <div class="form-row">
+          <div class="form-group"><label>City *</label><input type="text" name="City" required/></div>
+          <div class="form-group"><label>Postcode *</label><input type="text" name="Postcode" required/></div>
+        </div>
+      </div>
+
+      <!-- PARENT -->
+      <div class="reg-section">
+        <div class="reg-section-head"><div class="reg-section-num">2</div><h2>Parent/guardian information</h2></div>
+        <div class="form-group"><label>Full name *</label><input type="text" name="Parent Name" id="r-parent-name" required/></div>
+        <div class="form-row">
+          <div class="form-group"><label>Relationship to student *</label><input type="text" name="Parent Relationship" required/></div>
+          <div class="form-group"><label>Mobile number *</label><input type="tel" name="Parent Mobile" required/></div>
+        </div>
+        <div class="form-group"><label>Email address *</label><input type="email" name="Parent Email" id="r-parent-email" required/></div>
+      </div>
+
+      <!-- EMERGENCY -->
+      <div class="reg-section">
+        <div class="reg-section-head"><div class="reg-section-num">3</div><h2>Emergency contacts</h2></div>
+        <div class="reg-section-note">Please give two contacts other than the parent/guardian above, where possible.</div>
+
+        <p class="reg-subhead">Emergency contact 1</p>
+        <div class="reg-row3">
+          <div class="form-group"><label>Full name *</label><input type="text" name="Emergency Contact 1 Name" required/></div>
+          <div class="form-group"><label>Relationship *</label><input type="text" name="Emergency Contact 1 Relationship" required/></div>
+          <div class="form-group"><label>Mobile number *</label><input type="tel" name="Emergency Contact 1 Mobile" required/></div>
+        </div>
+
+        <p class="reg-subhead" style="margin-top:1rem">Emergency contact 2 <span class="reg-opt">(optional)</span></p>
+        <div class="reg-row3">
+          <div class="form-group"><label>Full name</label><input type="text" name="Emergency Contact 2 Name"/></div>
+          <div class="form-group"><label>Relationship</label><input type="text" name="Emergency Contact 2 Relationship"/></div>
+          <div class="form-group"><label>Mobile number</label><input type="tel" name="Emergency Contact 2 Mobile"/></div>
+        </div>
+      </div>
+
+      <!-- MEDICAL -->
+      <div class="reg-section">
+        <div class="reg-section-head"><div class="reg-section-num">4</div><h2>Medical &amp; additional information</h2></div>
+        <div class="form-group">
+          <label>Medical conditions <span class="reg-opt">— special needs, relevant medical conditions or medication needed</span></label>
+          <textarea name="Medical Info" placeholder="Leave blank if not applicable"></textarea>
+        </div>
+        <div class="form-group">
+          <label>Allergies <span class="reg-opt">— allergies or dietary requirements</span></label>
+          <textarea name="Allergies" placeholder="Leave blank if not applicable"></textarea>
+        </div>
+        <div class="form-group">
+          <label>Anything else we should know about your child? <span class="reg-opt">(optional)</span></label>
+          <textarea name="Other Info"></textarea>
+        </div>
+      </div>
+
+      <!-- TERMS -->
+      <div class="reg-section">
+        <div class="reg-section-head"><div class="reg-section-num">5</div><h2>Terms &amp; agreement</h2></div>
+        <div class="reg-terms">
+          <ol>
+            <li>'Child' refers to the child who is registered to attend Horizon Tuition.</li>
+            <li>This agreement is between the Parent/Guardian and Horizon Tuition.</li>
+            <li>At time of booking, the client must inform Horizon Tuition of any medical conditions/allergies that should be brought to the attention of the supervising staff members.</li>
+            <li>Any snack brought to the exam by a child must be nut-free.</li>
+            <li>If Horizon Tuition is informed that a child attending a mock exam has an allergy, Horizon Tuition will endeavour to take all possible precautions to make sure there are no exposures to any allergies, however, please note we cannot guarantee an allergen free environment.</li>
+            <li>If the medical condition of a child potentially requires intervention from a staff member, the Parent/Guardian should remain contactable at the location for the duration of the tuition session.</li>
+            <li>If a Child is too unwell to attend a session, the Client should inform Horizon Tuition, and all efforts will be made to offer an alternative session once the Child is feeling well again.</li>
+          </ol>
+        </div>
+
+        <div class="form-group">
+          <label>Type your full name to sign *</label>
+          <input type="text" name="Signed By" id="r-signature" placeholder="Full legal name" required/>
+          <div class="reg-sig-note">Typing your name here acts as your signature and confirms you are the parent/guardian named above.</div>
+        </div>
+
+        <div class="consent-row">
+          <input type="checkbox" id="r-consent" required/>
+          <label for="r-consent">I have read and agree to the terms above, and I consent to Horizon Tuition Redbridge storing these details for the purpose of registering my child. See our <a href="/privacy-policy/" style="color:var(--teal)">Privacy Policy</a>. *</label>
+        </div>
+      </div>
+
+      <button type="submit" class="btn-submit">Submit registration →</button>
+      <div class="form-note">Your information is sent directly and securely to Horizon Tuition — it is not stored anywhere else.</div>
+    </form>
+  </div>
+
+  <div class="success-msg" id="success-msg">
+    <div style="font-size:2rem;margin-bottom:0.5rem">✅</div>
+    <h3>Registration received</h3>
+    <p>Thank you — we've received your child's registration. A member of the Horizon Tuition team will be in touch shortly to confirm next steps.</p>
+  </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo"><img src="/assets/images/photo2.png" alt="Horizon Tuition Redbridge" style="height:34px;width:auto;display:block"/></div>
+        <p class="footer-desc">Professional English, Maths and Exam Preparation Tuition for Ages 6–16. Delivered by Qualified, DBS-Checked Teachers in Barkingside, Redbridge.</p>
+        <div class="footer-contact" style="margin-top:1rem">
+          <a href="tel:02080586815">📞 02080586815</a>
+          <a href="tel:07735106791">📱 07735 106791</a>
+          <a href="mailto:info@horizontuitionredbridge.co.uk">✉ info@horizontuitionredbridge.co.uk</a>
+          <a href="https://maps.google.com/maps?q=5+State+Parade,+Barkingside,+IG6+2EY" target="_blank" style="color:rgba(255,255,255,0.4);font-size:0.8rem">📍 5 State Parade, Barkingside, IG6 2EY</a>
+        </div>
+      </div>
+      <div class="footer-col"><h4>Programmes</h4><a href="/maths-tuition/">Maths Tuition</a><a href="/english-tuition/">English Tuition</a><a href="/11-plus-preparation/">11+ Preparation</a><a href="/sats-preparation/">SATs Preparation</a><a href="/gcse-support/">GCSE Support</a><a href="/sen-dyslexia-support/">SEN &amp; Dyslexia</a></div>
+      <div class="footer-col"><h4>Information</h4><a href="/about-us/">About Us</a><a href="/how-it-works/">How It Works</a><a href="/testimonials/">Results</a><a href="/resources/">Resources</a><a href="/registration/">Register</a><a href="/safeguarding/">Safeguarding</a></div>
+      <div class="footer-col"><h4>Legal</h4><a href="/privacy-policy/">Privacy Policy</a><a href="/safeguarding/">Safeguarding</a><h4 style="margin-top:1rem">Opening Hours</h4><span style="font-size:0.8rem;color:rgba(255,255,255,0.5)">Open 7 days · Mon–Fri: 4pm–6:30pm</span><span style="font-size:0.8rem;color:rgba(255,255,255,0.5)">Saturday: 10am–3:45pm</span><span style="font-size:0.8rem;color:rgba(255,255,255,0.5)">Sunday: 12pm–1:45pm</span><span style="font-size:0.72rem;color:rgba(255,255,255,0.35);font-style:italic;margin-top:8px">Hours occasionally vary — we’ll always let you know</span></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 Horizon Tuition Redbridge. All rights reserved. · Powered by <a href="https://aukizan.com" target="_blank" rel="noopener" style="color:rgba(255,255,255,0.6)">Aukizan</a></span><div style="display:flex;gap:1rem"><a href="/privacy-policy/">Privacy</a><a href="/safeguarding/">Safeguarding</a></div></div>
+  </div>
+</footer>
+
+<script src="/assets/script.js"></script>
+<script>
+function validateRegistrationForm(){
+  var first=document.getElementById('r-first').value.trim();
+  var last=document.getElementById('r-last').value.trim();
+  var parentName=document.getElementById('r-parent-name').value.trim();
+  var parentEmail=document.getElementById('r-parent-email').value.trim();
+  var signature=document.getElementById('r-signature').value.trim();
+  var consent=document.getElementById('r-consent').checked;
+  if(!first||!last){showNotif('Please enter the student\'s first and last name.');return false;}
+  if(!parentName||!parentEmail){showNotif('Please enter the parent/guardian name and email address.');return false;}
+  if(!signature){showNotif('Please type your full name to sign the form.');return false;}
+  if(!consent){showNotif('Please tick the consent checkbox to proceed.');return false;}
+  var btn=document.querySelector('#registration-form .btn-submit');
+  if(btn){btn.disabled=true;btn.textContent='Submitting…';}
+  return true;
+}
+if(location.search.indexOf('sent=1')!==-1){
+  var wrap=document.getElementById('reg-form-wrap');
+  var msg=document.getElementById('success-msg');
+  if(wrap && msg){wrap.style.display='none';msg.style.display='block';window.scrollTo({top:0,behavior:'smooth'});}
+}
+</script>
+</body>
+</html>
