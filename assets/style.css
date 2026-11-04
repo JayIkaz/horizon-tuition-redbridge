@@ -418,7 +418,7 @@ a,button{transition:color .2s ease,background-color .2s ease,border-color .2s ea
 .mega.animating{animation:mega-open .22s cubic-bezier(.22,.61,.36,1) both}
 @keyframes mega-open{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:none}}
 .mega-inner{max-width:1240px;margin:0 auto;padding:2rem 2rem 2.25rem;display:grid;
-  grid-template-columns:repeat(4,1fr);gap:2rem}
+  grid-template-columns:minmax(0,1fr) minmax(0,320px);gap:3rem}
 .mega-col h4{font-family:var(--ff-head);font-size:0.78rem;text-transform:uppercase;
   letter-spacing:1px;color:var(--ink-muted);margin:0 0 0.9rem}
 .mega-col a{display:block;padding:0.4rem 0;color:var(--grey-800);text-decoration:none;
@@ -432,8 +432,8 @@ a,button{transition:color .2s ease,background-color .2s ease,border-color .2s ea
    brand's. Decoration only: the ::before is empty, so nothing new is
    announced to a screen reader. The .card-icon emoji in page content are a
    separate thing and were left alone. */
-.mega-col a.mi{display:flex;align-items:center;gap:0.6rem}
-.mega-col a.mi::before{content:"";width:8px;height:8px;border-radius:50%;
+.mega-col a.mi,.mega-sub a.mi{display:flex;align-items:center;gap:0.6rem}
+.mega-col a.mi::before,.mega-sub a.mi::before{content:"";width:8px;height:8px;border-radius:50%;
   background:var(--acc,var(--navy));flex-shrink:0}
 .mi.maths     {--acc:#1a4fa0}
 .mi.english   {--acc:#0d9488}
@@ -1739,3 +1739,141 @@ h1:not(.masked) .ln>i{transform:none;transition:none}
   .racc.racc-on .racc-p{transition:none}
   .racc-chev{transition:none}
 }
+
+
+/* ===== course page photo =====
+   The eight course pages carried no photograph at all: hero, key stage
+   topics, then the closing band. This sits between the topics and that
+   band. One picture of the material actually used, and one sentence
+   about what is in it, so the claim and the evidence are together.
+
+   The accent is the page's own subject colour, the same value its hero
+   uses. SEND and Online Tuition have no block: nothing in the photo set
+   shows either, and a stock-looking stand-in would be worse than none. */
+.cshot{padding:3.25rem 2rem}
+.cshot-in{max-width:1200px;margin:0 auto;display:grid;
+  grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:2.5rem;align-items:center}
+/* the frame holds the shape, so the page does not jump as the photo loads */
+.cshot-frame{aspect-ratio:4/3;overflow:hidden;border-radius:10px;background:var(--grey-100)}
+.cshot-frame img{width:100%;height:100%;object-fit:cover;display:block}
+.cshot-eyebrow{display:block;font-size:0.72rem;font-weight:700;letter-spacing:1.4px;
+  text-transform:uppercase;color:var(--acc,var(--teal-ink))}
+.cshot h3{font-family:var(--ff-head);font-size:1.4rem;color:var(--navy);
+  margin:0.4rem 0 0.5rem;line-height:1.25}
+.cshot p{color:var(--ink-muted);font-size:0.95rem;max-width:46ch}
+.cshot-rule{display:block;width:46px;height:3px;border-radius:2px;
+  background:var(--acc,var(--teal));margin-top:1rem}
+.cshot.maths     {--acc:#1a4fa0}
+.cshot.english   {--acc:#0a6e66}
+.cshot.science   {--acc:#246b3b}
+.cshot.elevenplus{--acc:#5a3ab0}
+.cshot.sats      {--acc:#8a6500}
+.cshot.gcse      {--acc:#9c2f4f}
+@media(max-width:800px){
+  .cshot{padding:2.25rem 1.25rem}
+  .cshot-in{grid-template-columns:1fr;gap:1.25rem}
+  .cshot p{max-width:none}
+}
+
+
+/* ===== menu: one ordered list, courses on a toggle =====
+   The menu used to be four columns of links in no particular order. It
+   now follows the running order of the site itself, with the eight
+   courses folded into a group you open rather than a column that is
+   always spilling down the page.
+
+   The sub list is open in the markup and script.js closes it, so a
+   script that fails to load leaves every course reachable instead of
+   shut behind a button that does nothing. */
+.mega-nav{display:flex;flex-direction:column;gap:0.1rem}
+.mega-nav > a,.mega-group-btn{display:block;width:100%;padding:0.55rem 0;
+  font-family:var(--ff-head);font-size:1.05rem;font-weight:600;color:var(--navy);
+  background:none;border:none;text-align:left;cursor:pointer;
+  transition:transform .2s ease,color .2s ease}
+.mega-nav > a:hover,.mega-group-btn:hover{transform:translateX(3px)}
+.mega-group-btn{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+/* a chevron from two borders, so it is not a font glyph */
+.mega-chev{width:9px;height:9px;border-right:2px solid var(--navy);
+  border-bottom:2px solid var(--navy);transform:rotate(45deg);flex-shrink:0;
+  margin-bottom:3px;transition:transform .35s var(--ease-o)}
+.mega-group.open .mega-chev{transform:rotate(-135deg);margin-bottom:-3px}
+.mega-sub{display:grid;grid-template-rows:1fr}
+.mega-group.is-ready .mega-sub{grid-template-rows:0fr}
+.mega-group.is-ready.open .mega-sub{grid-template-rows:1fr}
+.mega-group.anim .mega-sub{transition:grid-template-rows .35s var(--ease-o)}
+.mega-sub > div{overflow:hidden}
+@supports not (grid-template-rows:0fr){
+  .mega-group.is-ready .mega-sub{display:block;max-height:0;overflow:hidden}
+  .mega-group.is-ready.open .mega-sub{max-height:32rem}
+  .mega-group.anim .mega-sub{transition:max-height .35s var(--ease-o)}
+}
+.mega-sub a{display:block;padding:0.38rem 0 0.38rem 1rem;color:var(--grey-800);
+  font-size:0.92rem;border-left:1px solid var(--grey-200);margin-left:2px;
+  transition:color .2s ease,transform .2s ease}
+.mega-sub a:hover{color:var(--navy);transform:translateX(3px)}
+@media(prefers-reduced-motion:reduce){
+  .mega-group.anim .mega-sub{transition:none}
+  .mega-chev{transition:none}
+}
+@media(max-width:760px){
+  .mega-inner{grid-template-columns:1fr;gap:1.5rem}
+}
+
+/* The doc named six items and an order for them. Everything else that was
+   already in the menu stays, quieter, underneath: it was never asked for
+   and dropping it would have hidden the parent guides behind the footer. */
+.mega-more{display:flex;flex-direction:column;gap:0.1rem;margin-top:0.7rem;
+  padding-top:0.7rem;border-top:1px solid var(--hair-line)}
+.mega-more a{display:block;padding:0.3rem 0;color:var(--ink-muted);
+  font-size:0.88rem;transition:color .2s ease,transform .2s ease}
+.mega-more a:hover{color:var(--navy);transform:translateX(3px)}
+.mega-sub .mega-all{margin-top:0.45rem;font-weight:600;border-left-color:transparent}
+
+/* ===== hero: the lines the amendments doc adds above the headline ===== */
+.nhero-eyebrow{display:block;font-size:0.76rem;font-weight:700;letter-spacing:1.6px;
+  text-transform:uppercase;color:rgba(255,255,255,0.72);margin-bottom:0.5rem}
+.nhero-kicker{font-family:var(--ff-head);font-weight:600;font-size:1.05rem;
+  color:var(--amber);margin-bottom:0.4rem}
+/* the doc's sub is five times longer than the line it replaces, so the
+   measure widens or it runs to seven lines beside the offer card */
+.nhero-sub{max-width:54ch}
+.nhero-cta{align-self:flex-start}
+/* The doc's third line needs 14.34em against the old line's 12.26em, which
+   overran the copy column at every width. The headline steps down so the
+   longest line still fits beside the offer card. */
+.nhero h1{font-size:clamp(1.75rem,3.3vw,2.9rem)}
+/* The new third line, "Unlocking Academic Potential", measures 14.34em
+   against the 12.26em of the line it replaces, so below about 460px it
+   would wrap inside its reveal span. Scaled from the longest line, as the
+   Science, SATs and Online heroes already are. 48px is the side padding
+   plus a little slack. */
+@media(max-width:460px){
+  .nhero h1{font-size:calc((100vw - 48px) / 14.8)}
+}
+/* four marks rather than three, so they wrap two by two before stacking */
+@media(min-width:901px){
+  .nmarks-4 .nmarks-in{grid-template-columns:repeat(4,1fr);gap:1.5rem}
+}
+@media(max-width:900px) and (min-width:561px){
+  .nmarks-4 .nmarks-in{grid-template-columns:repeat(2,1fr)}
+}
+
+/* the homepage pricing block now carries the two in centre tiers only, and
+   sends people to the online page rather than pricing it here twice */
+.pricing-online{margin-top:1.5rem}
+.btn-secondary-line{display:inline-block;font-weight:600;font-size:0.95rem;
+  color:var(--navy);border-bottom:2px solid var(--amber);padding-bottom:2px;
+  transition:color .2s ease,transform .2s ease}
+.btn-secondary-line:hover{transform:translateX(3px)}
+
+/* ===== about us: the standards, and the centre ===== */
+.std-lead{color:var(--grey-800);font-weight:600;margin-bottom:1.25rem}
+.std-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem}
+.std{border-left:3px solid var(--teal);padding:0.1rem 0 0.1rem 1rem}
+.std h3{font-family:var(--ff-head);font-size:1.05rem;color:var(--navy);margin-bottom:0.35rem}
+.std p{font-size:0.92rem;color:var(--ink-muted)}
+.centre-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem}
+.centre-grid figure{margin:0}
+.centre-frame{aspect-ratio:4/3;overflow:hidden;border-radius:10px;background:var(--grey-100)}
+.centre-frame img{width:100%;height:100%;object-fit:cover;display:block}
+.centre-grid figcaption{margin-top:0.6rem;font-size:0.86rem;color:var(--ink-muted)}

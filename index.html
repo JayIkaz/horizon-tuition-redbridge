@@ -28,7 +28,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet"/>
-<link rel="stylesheet" href="/assets/style.css?v=58c808c97a"/>
+<link rel="stylesheet" href="/assets/style.css?v=517e180f03"/>
 <script>try{var b=localStorage.getItem("htr-bar"),t=b==="off"?0:+b;if(t&&Date.now()-t<2592e6)document.documentElement.classList.add("no-phone-bar");else if(b)localStorage.removeItem("htr-bar");}catch(e){}</script>
 <script>/* arm the hero card before first paint so it never flickers; the rescue settles it even if script.js never runs */try{if(!(window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches)){var d=document.documentElement;d.classList.add("hero-armed");setTimeout(function(){d.classList.remove("hero-armed")},4500)}}catch(e){}</script>
 </head>
@@ -65,44 +65,44 @@
   </div>
   <div class="mega" id="megaMenu" hidden>
     <div class="mega-inner">
-      <div class="mega-col">
-        <h4>About</h4>
+      <div class="mega-nav">
         <a href="/">Home</a>
         <a href="/about-us/">About Us</a>
-        <a href="/how-it-works/">The Journey</a>
-        <a href="/online-tuition/">Online Tuition</a>
-      </div>
-      <div class="mega-col">
-        <h4>Our Courses</h4>
-        <a href="/english-tuition/" class="mi english">English Tuition</a>
-        <a href="/maths-tuition/" class="mi maths">Maths Tuition</a>
-        <a href="/science-tuition/" class="mi science">Science Tuition</a>
-        <a href="/11-plus-preparation/" class="mi elevenplus">11+ Preparation</a>
-        <a href="/sats-preparation/" class="mi sats">SATs Preparation</a>
-        <a href="/gcse-support/" class="mi gcse">GCSE</a>
-        <a href="/sen-dyslexia-support/" class="mi send">SEND Support</a>
-        <a href="/online-tuition/" class="mi online">Online Tuition</a>
-        <a href="/programmes/" class="mega-all">All courses →</a>
-      </div>
-      <div class="mega-col">
-        <h4>Parent Hub</h4>
+        <div class="mega-group">
+          <button class="mega-group-btn" type="button" aria-expanded="true" aria-controls="megaCourses">
+            <span>Our Courses</span><span class="mega-chev" aria-hidden="true"></span>
+          </button>
+          <div class="mega-sub" id="megaCourses"><div>
+            <a href="/online-tuition/" class="mi online">Online Tuition</a>
+            <a href="/english-tuition/" class="mi english">English Tuition</a>
+            <a href="/maths-tuition/" class="mi maths">Maths Tuition</a>
+            <a href="/science-tuition/" class="mi science">Science Tuition</a>
+            <a href="/11-plus-preparation/" class="mi elevenplus">11+ Preparation</a>
+            <a href="/sats-preparation/" class="mi sats">SATs Preparation</a>
+            <a href="/gcse-support/" class="mi gcse">GCSE</a>
+            <a href="/sen-dyslexia-support/" class="mi send">SEND Support</a>
+            <a href="/programmes/" class="mega-all">All courses →</a>
+          </div></div>
+        </div>
         <a href="/pricing/">Pricing</a>
         <a href="/testimonials/">Reviews</a>
-        <a href="/resources/">Resources</a>
-        <a href="/registration/">Register a Student</a>
-        <a href="/contact/">FAQs</a>
-        <a href="/contact/">Get in Touch</a>
+        <a href="/registration/">Enquire Now</a>
+        <div class="mega-more">
+          <a href="/how-it-works/">The Journey</a>
+          <a href="/resources/">Resources</a>
+          <a href="/contact/">FAQs</a>
+          <a href="/contact/">Get in Touch</a>
+        </div>
       </div>
       <div class="mega-col mega-contact">
         <h4>Get in Touch</h4>
-        <a href="tel:02080586815">📞 020 8058 6815</a>
-        <a href="tel:07735106791">📱 07735 106791</a>
-        <a href="mailto:info@horizontuitionredbridge.co.uk">✉ Email us</a>
+        <a href="tel:02080586815">020 8058 6815</a>
+        <a href="tel:07735106791">07735 106791</a>
+        <a href="mailto:info@horizontuitionredbridge.co.uk">Email us</a>
         <p>5 State Parade,<br/>Barkingside IG6 2EY</p>
-        <p class="mega-hours">Mon-Thu 4-6:30pm<br/>Sat 10am-3:45pm<br/>Sun 12pm-1:45pm</p>
+        <p class="mega-hours">Mon-Fri 4-6:30pm<br/>Sat 10am-3:45pm<br/>Sun 12pm-1:45pm</p>
       </div>
     </div>
-  </div>
 </nav>
 
 <!-- HERO -->
@@ -111,13 +111,16 @@
   <div class="nhero-scrim"></div>
   <div class="nhero-in">
     <div class="nhero-copy">
+      <span class="nhero-eyebrow">Barkingside, Redbridge · Open Mon-Sun</span>
+      <p class="nhero-kicker">Give your child the best start!</p>
       <h1 class="masked">
         <span class="ln"><i>Building <span class="hl">Confidence</span>,</i></span>
         <span class="ln"><i>Strengthening Skills and</i></span>
-        <span class="ln"><i>Driving Academic Results</i></span>
+        <span class="ln"><i>Unlocking Academic Potential</i></span>
       </h1>
-      <p class="nhero-sub">Small group tuition in Maths, English and Science for ages 6 to 16, in Barkingside.</p>
+      <p class="nhero-sub">Expert small-group tuition for students aged 6 to 16 in Barkingside. Qualified teachers and experienced subject specialists (enhanced DBS checked) deliver engaging 1 hour 45 minute lessons in a supportive learning environment, designed to boost confidence and fill knowledge gaps.</p>
       <div class="nhero-btns">
+        <a href="/contact/" class="btn-primary nhero-cta">Book Free Assessment →</a>
         <a href="#session" class="nhero-more">See how a session works</a>
         <div class="nhero-subjects">
           <a href="/maths-tuition/">Maths</a><a href="/english-tuition/">English</a><a href="/science-tuition/">Science</a><a href="/11-plus-preparation/">11+</a><a href="/sats-preparation/">SATs</a><a href="/gcse-support/">GCSE</a>
@@ -150,19 +153,23 @@
   </div>
 </header>
 
-<div class="nmarks" data-anim>
+<div class="nmarks nmarks-4" data-anim>
   <div class="nmarks-in">
     <div class="mk">
       <svg viewBox="0 0 100 100" aria-hidden="true"><path style="--len:95" d="M22 54 L42 76 L80 24"/></svg>
-      <div><b>Every member of staff is DBS checked</b><span>Qualified teachers and experienced subject specialists.</span></div>
+      <div><b>Access to our extensive, in-house library</b></div>
     </div>
     <div class="mk">
       <svg viewBox="0 0 100 100" aria-hidden="true"><path style="--len:265" d="M64 24 C40 14 18 29 18 50 C18 72 41 87 62 80 C83 73 90 49 77 34 C69 24 54 20 44 26"/></svg>
-      <div><b>Groups matched on ability</b><span>Not just on what school year your child happens to be in.</span></div>
+      <div><b>Enhanced DBS checked staff</b></div>
     </div>
     <div class="mk">
       <svg viewBox="0 0 100 100" aria-hidden="true"><path style="--len:76" d="M14 58 L86 58"/><path style="--len:76" d="M18 74 L82 74"/></svg>
-      <div><b>Your first two sessions are free</b><span>You see how it works before you pay anything.</span></div>
+      <div><b>Proven Track Record of Results</b></div>
+    </div>
+    <div class="mk">
+      <svg viewBox="0 0 100 100" aria-hidden="true"><path style="--len:95" d="M22 54 L42 76 L80 24"/></svg>
+      <div><b>Online &amp; In-Centre Tuition Available</b></div>
     </div>
   </div>
 </div>
@@ -170,39 +177,40 @@
 <!-- WHAT ACTUALLY HAPPENS -->
 <section id="session"><div class="section-inner wide">
   <div class="section-head">
-    <h2 class="section-h">What Actually Happens</h2>
+    <div class="section-tag">Getting Started</div>
+    <h2 class="section-h">The Journey</h2>
     <p class="section-sub">Most tuition centres will not tell you this plainly, so here it is, start to finish.</p>
   </div>
   <div class="pin">
     <div class="pin-sticky">
       <div class="pin-frame" data-anim>
-        <div class="pin-pane on"><img class="graded" src="/assets/images/photo7.jpg" alt="The entrance at 5 State Parade"/></div>
-        <div class="pin-pane"><img class="graded" src="/assets/images/photo4.jpg" alt="Group tables set up for a session"/></div>
-        <div class="pin-pane"><img class="graded" src="/assets/images/photo6.jpg" alt="The teaching room"/></div>
-        <div class="pin-pane"><img class="graded" src="/assets/images/hero-students.jpg" alt="Students working in a session"/></div>
+        <div class="pin-pane on"><img class="graded" src="/assets/images/centre-front.jpg" alt="The centre at 5 State Parade, Barkingside"/></div>
+        <div class="pin-pane"><img class="graded" src="/assets/images/group-session.jpg" alt="A small group working through a practice paper"/></div>
+        <div class="pin-pane"><img class="graded" src="/assets/images/materials.jpg" alt="Books and exercise books set out on the tables"/></div>
+        <div class="pin-pane"><img class="graded" src="/assets/images/library.jpg" alt="Part of the centre's library of reading books"/></div>
         <span class="pin-badge" id="pin-badge">Before you start</span>
       </div>
     </div>
     <div class="pin-steps">
       <div class="pin-step on" data-badge="Before you start">
         <span class="n">01</span>
-        <h3>We assess first</h3>
-        <p>Before anything is booked we sit your child down and work out where they actually are. Not what year they are in, what they can currently do.</p>
+        <h3>Initial Assessment</h3>
+        <p>We identify your child's current level and learning needs.</p>
       </div>
       <div class="pin-step" data-badge="Finding the group">
         <span class="n">02</span>
-        <h3>They join a small group</h3>
-        <p>Matched on age and on ability, so nobody is the lost one at the back and nobody is sat bored having already got it.</p>
+        <h3>Personalised Group Placement</h3>
+        <p>Your child is matched with students of a similar age and ability.</p>
       </div>
       <div class="pin-step" data-badge="Every week">
         <span class="n">03</span>
-        <h3>One hour forty five, every week</h3>
-        <p>Long enough to teach something properly and then practise it. Homework is set and marked every week, not handed out and forgotten.</p>
+        <h3>Weekly Tuition Sessions</h3>
+        <p>Your child attends one or two structured sessions per week.</p>
       </div>
       <div class="pin-step" data-badge="How you know">
         <span class="n">04</span>
-        <h3>You hear how it is going</h3>
-        <p>We tell you what your child is finding hard and what has clicked. The first two sessions are free, so you see all of this before you pay.</p>
+        <h3>Progress Updates</h3>
+        <p>Regular feedback is given to parents on attainment, effort and development.</p>
       </div>
     </div>
   </div>
@@ -289,7 +297,7 @@
 <section style="background:var(--grey-50)"><div class="section-inner">
   <div class="section-head">
     <h2 class="section-h">Hear From Our Parents</h2>
-    <p class="section-sub">We don't just teach subjects. We help students do better. Here is what families say about working with us.</p>
+    <p class="section-sub">We don't just teach subjects, we help students thrive. Discover how we've helped families just like yours.</p>
   </div>
   <div class="reviews-scroller">
     <div class="testimonial"><div class="stars">★★★★★</div><p>"The structured practice papers and step-by-step breakdowns made a huge difference. She walked into exam week feeling calm and prepared, and scored high scaled scores across all subjects."</p><div class="testimonial-author">David K.</div><div class="testimonial-meta">Parent, Year 6 SATs</div><div class="prog-tag">SATs</div></div>
@@ -304,14 +312,15 @@
 <!-- PRICING -->
 <section><div class="section-inner">
   <div class="section-head">
-    <h2 class="section-h">Our Pricing</h2>
-    <p class="section-sub">Flexible, transparent pricing. No joining fees. No long-term contracts. Your first two sessions are free.</p>
+    <div class="section-tag">Our Pricing</div>
+    <h2 class="section-h">Invest in Your Child's Future</h2>
+    <p class="section-sub">Flexible, transparent pricing designed to fit your child's goals. No joining fees and no restrictive contracts.</p>
   </div>
   <div class="pricing-cards">
     <div class="pricing-card"><h3>1 Session per Week (In Centre)</h3><div class="price"><sup>£</sup>20</div><div class="price-note">per 1h 45min session</div><div class="price-hour">£11.43 an hour</div><ul><li>1 hour 45 minutes of targeted learning</li><li>Taught at your child's level</li><li>Weekly homework set and reviewed</li><li>Parent progress updates</li></ul><a href="/contact/" class="btn-primary" style="background:var(--navy);color:#fff;width:100%;padding:0.75rem;border-radius:var(--radius-sm);text-align:center">Get Started</a></div>
-    <div class="pricing-card featured"><h3>2 Sessions per Week (In Centre)</h3><div class="price"><sup>£</sup>35</div><div class="price-note">both sessions included, works out at £17.50 each</div><div class="price-hour">£10.00 an hour</div><ul><li>Two 1 hour 45 minute sessions</li><li>Taught at your child's level</li><li>Weekly homework set and reviewed</li><li>Parent progress updates</li><li>Faster results</li></ul><a href="/contact/" class="btn-primary" style="background:var(--navy);color:#fff;width:100%;padding:0.75rem;border-radius:var(--radius-sm);text-align:center">Get Started</a></div>
-    <div class="pricing-card" style="border-color:var(--teal)"><h3>Online Tuition</h3><div class="price">from <sup>£</sup>16</div><div class="price-note">per 1h 15min group session</div><div class="price-hour">£12.80 an hour</div><ul><li>Small group sessions, no travel</li><li>One to one also available, from £17.50 an hour</li><li>Ideal for extra support or exam preparation</li><li>Parent progress updates</li></ul><a href="/online-tuition/" class="btn-primary" style="background:var(--teal);color:#fff;width:100%;padding:0.75rem;border-radius:var(--radius-sm);text-align:center">Learn More</a></div>
+    <div class="pricing-card featured"><h3>2 Sessions per Week (In Centre)</h3><div class="price"><sup>£</sup>35</div><div class="price-note">both sessions included</div><div class="price-hour">£10.00 an hour</div><ul><li>Two 1 hour 45 minute sessions (£17.50 per session)</li><li>Taught at your child's level</li><li>Weekly homework set and reviewed</li><li>Parent progress updates</li><li>Faster results</li></ul><a href="/contact/" class="btn-primary" style="background:var(--navy);color:#fff;width:100%;padding:0.75rem;border-radius:var(--radius-sm);text-align:center">Get Started</a></div>
   </div>
+  <div class="pricing-online"><a href="/online-tuition/" class="btn-secondary-line">Find out about Online Tuition →</a></div>
   <p style="color:var(--grey-600);font-size:0.86rem;margin-top:1.5rem;max-width:52ch">Paid monthly in arrears and due within 7 days. No joining fee and no fixed notice period. A missed session is rearranged by you and is not charged for.</p>
 </div></section>
 
@@ -350,13 +359,13 @@
       </div>
       <div class="footer-col"><h4>Information</h4><a href="/">Home</a><a href="/about-us/">About Us</a><a href="/online-tuition/">Online Tuition</a><a href="/pricing/">Our Pricing</a><a href="/how-it-works/">The Journey</a><a href="/testimonials/">Reviews</a><a href="/resources/">Resources</a><a href="/registration/">Register</a></div>
       <div class="footer-col"><h4>Our Courses</h4><a href="/english-tuition/">English Tuition</a><a href="/maths-tuition/">Maths Tuition</a><a href="/science-tuition/">Science Tuition</a><a href="/11-plus-preparation/">11+ Preparation</a><a href="/sats-preparation/">SATs Preparation</a><a href="/gcse-support/">GCSE</a><a href="/sen-dyslexia-support/">SEND Support</a><a href="/online-tuition/">Online Tuition</a></div>
-      <div class="footer-col"><h4>Legal</h4><a href="/privacy-policy/">Privacy Policy</a><a href="/terms/">Terms and Conditions</a><a href="/safeguarding/">Safeguarding Policy</a><h4 style="margin-top:1rem">Opening Hours</h4><span style="font-size:0.8rem;color:rgba(255,255,255,0.5)">Open 6 days · Mon-Thu: 4pm-6:30pm</span><span style="font-size:0.8rem;color:rgba(255,255,255,0.5)">Saturday: 10am-3:45pm</span><span style="font-size:0.8rem;color:rgba(255,255,255,0.5)">Sunday: 12pm-1:45pm</span><span style="font-size:0.72rem;color:rgba(255,255,255,0.55);font-style:italic;margin-top:8px">Hours occasionally vary. We'll always let you know</span></div>
+      <div class="footer-col"><h4>Legal</h4><a href="/privacy-policy/">Privacy Policy</a><a href="/terms/">Terms and Conditions</a><a href="/safeguarding/">Safeguarding Policy</a><h4 style="margin-top:1rem">Opening Hours</h4><span style="font-size:0.8rem;color:rgba(255,255,255,0.5)">Open 7 days · Mon-Fri: 4pm-6:30pm</span><span style="font-size:0.8rem;color:rgba(255,255,255,0.5)">Saturday: 10am-3:45pm</span><span style="font-size:0.8rem;color:rgba(255,255,255,0.5)">Sunday: 12pm-1:45pm</span><span style="font-size:0.72rem;color:rgba(255,255,255,0.55);font-style:italic;margin-top:8px">Hours occasionally vary. We'll always let you know</span></div>
     </div>
     <div class="footer-bottom"><span>© 2026 Horizon Tuition Redbridge. All rights reserved. · Powered by <a href="https://aukizan.com" target="_blank" rel="noopener" style="color:rgba(255,255,255,0.6)">Aukizan</a></span><div style="display:flex;gap:1rem"><a href="/privacy-policy/">Privacy</a><a href="/safeguarding/">Safeguarding</a></div></div>
   </div>
 </footer>
 
-<script src="/assets/script.js?v=aaa4d5237a"></script>
+<script src="/assets/script.js?v=2e13f077b0"></script>
 <a class="float-contact" href="/contact/" aria-label="Contact us"><span>💬</span><span class="float-contact-txt">Contact</span></a>
 </body>
 </html>
