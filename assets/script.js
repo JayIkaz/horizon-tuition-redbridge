@@ -938,3 +938,27 @@ function hidePhoneBar(){
     accs.forEach(function(a){ a.classList.add('racc-on'); });
   }, 80);
 })();
+
+
+/* --- menu: the Our Courses group ------------------------------------
+   Open in the markup, closed here, so the courses stay reachable if this
+   file never loads. .anim arrives on a plain timer rather than
+   requestAnimationFrame, which can be throttled to nothing. */
+(function(){
+  var group = document.querySelector('.mega-group');
+  if(!group) return;
+  var btn = group.querySelector('.mega-group-btn');
+  if(!btn) return;
+
+  group.classList.add('is-ready');
+  group.classList.remove('open');
+  btn.setAttribute('aria-expanded','false');
+
+  btn.addEventListener('click', function(e){
+    e.stopPropagation();
+    var open = group.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+
+  setTimeout(function(){ group.classList.add('anim'); }, 80);
+})();
